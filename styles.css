@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    color: whitesmoke;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    grid-gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.card1 {
+    
+    background-color: orangered; 
+    grid-area: a;  
+}
+
+.card2 {
+    background-color: orange;
+    grid-area: b; 
+}
+
+.card3 {
+    background-color: green;
+    grid-area: c; 
+}
+
+.card4 {
+    background-color: lightseagreen;
+    grid-area: d; 
+}
+
+.card5 {
+    background-color: lightseagreen;
+    grid-area: e; 
+}
